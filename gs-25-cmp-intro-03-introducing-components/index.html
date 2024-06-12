@@ -9,22 +9,19 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.47/dist/vue.global.min.js"></script>
+    <script src="https://unpkg.com/vue@next" defer></script>
     <script src="app.js" defer></script>
   </head>
   <body>
     <header>
-      <h1>Vue Behind The Scenes</h1>
+      <h1>FriendList</h1>
     </header>
+    <friend-contact></friend-contact>
     <section id="app">
-      <h2>How Vue Works</h2>
-      <input type="text" ref="userText">
-      <button @click="setText">Set Text</button>
-      <p>{{ message }}</p>
-    </section>
-    <section id="app2">
-      <!-- DOES NOT WORK: <p>{{ message }}</p> -->
-      
+      <ul>
+        <friend-contact></friend-contact>
+        <friend-contact></friend-contact>
+      </ul>
     </section>
   </body>
 </html>
